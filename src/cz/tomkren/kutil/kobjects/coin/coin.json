@@ -1,0 +1,46 @@
+{
+
+  "physicalShape" : ["10,25", "55,25", "55,70", "10,70"],
+
+  "nodes": ["top","bottom"],
+  "skeleton": [["top","bottom"]],
+
+  "resources": {"coin": "/cz/tomkren/kutil/x/svgs/coin-front.json"},
+
+  "defaultBone" : "coin",
+
+  "posDelta": "50,50",
+
+  "showPhysicalBody": false,
+
+  "defaultAnimation" : "basicRoll",
+
+  "balls": [{"center": "top", "radius": 30}],
+
+  "animations" : {
+    "basicRoll": [{
+      "name" :        "frame1",
+      "center":       "0,0",
+      "top":          "0,-100",
+      "bottom":       "0,100"
+    },{
+      "name" :        "frame2",
+      "center":       "0,0",
+      "top":          "60,-50",
+      "bottom":       "-80,60"
+    },{
+      "name" :        "frame3",
+      "center":       "0,0",
+      "top":          "70,20",
+      "bottom":       "-130,20"
+    },{
+      "name" :        "frame4",
+      "center":       "0,0",
+      "top":          "70,80",
+      "bottom":       "-100,-50"
+    }]
+  }
+
+
+
+}

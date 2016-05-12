@@ -1,0 +1,477 @@
+{"kutil": [{
+  "id": "$1",
+  "type": "time",
+  "inside": [{
+    "size": "1117 701",
+    "pos": "20 20",
+    "id": "$mainFrame",
+    "type": "frame",
+    "inside": [{
+      "main": "true",
+      "id": "$main",
+      "inside": [
+        {
+          "movable": "false",
+          "pos": "30 30",
+          "id": "$2",
+          "cmd": "play",
+          "type": "button",
+          "title": "play/pause",
+          "guiStuff": "true"
+        },
+        {
+          "movable": "false",
+          "pos": "120 30",
+          "id": "$3",
+          "cmd": "changeInsertMode",
+          "type": "button",
+          "title": "changeInsertMode",
+          "guiStuff": "true"
+        },
+        {
+          "movable": "false",
+          "pos": "250 30",
+          "id": "$4",
+          "cmd": "showInfo",
+          "type": "button",
+          "title": "showInfo",
+          "guiStuff": "true"
+        },
+        {
+          "movable": "false",
+          "pos": "30 60",
+          "id": "$5",
+          "cmd": "undo",
+          "type": "button",
+          "title": "undo",
+          "guiStuff": "true"
+        },
+        {
+          "movable": "false",
+          "pos": "75 60",
+          "id": "$6",
+          "cmd": "redo",
+          "type": "button",
+          "title": "redo",
+          "guiStuff": "true"
+        },
+        {
+          "size": "1350 600",
+          "pos": "10 100",
+          "id": "$7",
+          "type": "frame",
+          "title": "U Vincenta doma",
+          "guiStuff": "true",
+          "cam": "-227 -93",
+          "target": "$doma"
+        },
+        {
+          "size": "545 570",
+          "pos": "1368 100",
+          "id": "$14",
+          "type": "frame",
+          "title": "Na trhu",
+          "guiStuff": "true",
+          "cam": "-227 -93",
+          "target": "$obchod"
+        },
+        {
+          "size": "545 70",
+          "pos": "561 4",
+          "id": "$story",
+          "type": "frame",
+          "inside": [
+            {
+              "pos": "22 22",
+              "id": "$doma",
+              "inside": [
+                {
+                  "pos": "162 219",
+                  "id": "$vincent",
+                  "type": "character",
+                  "physical": "true",
+                  "human": "true"
+                },
+                {
+                  "pos": "-1388 215",
+                  "id": "$kostra",
+                  "type": "character",
+                  "physical": "true"
+                },
+                {
+                  "shape": "rectangle 150 10",
+                  "pos": "-219 416",
+                  "attached": "true",
+                  "id": "$12",
+                  "physical": "true"
+                },
+                {
+                  "shape": "rectangle 150 10",
+                  "pos": "-63 415",
+                  "attached": "true",
+                  "id": "$13",
+                  "physical": "true"
+                },
+                {
+                  "shape": "rectangle 150 10",
+                  "pos": "92 415",
+                  "attached": "true",
+                  "id": "$10",
+                  "physical": "true"
+                },
+                {
+                  "shape": "rectangle 150 10",
+                  "pos": "-375 415",
+                  "attached": "true",
+                  "id": "$23",
+                  "physical": "true"
+                },
+                {
+                  "shape": "rectangle 150 10",
+                  "pos": "-528 415",
+                  "attached": "true",
+                  "id": "$24",
+                  "physical": "true"
+                },
+                {
+                  "shape": "rectangle 150 10",
+                  "pos": "-680 413",
+                  "attached": "true",
+                  "id": "$26",
+                  "physical": "true"
+                },
+                {
+                  "shape": "rectangle 150 10",
+                  "pos": "-833 415",
+                  "attached": "true",
+                  "id": "$27",
+                  "physical": "true"
+                },
+                {
+                  "shape": "rectangle 150 10",
+                  "pos": "-989 415",
+                  "attached": "true",
+                  "id": "$28",
+                  "physical": "true"
+                },
+                {
+                  "shape": "rectangle 150 10",
+                  "pos": "-1144 415",
+                  "attached": "true",
+                  "id": "$29",
+                  "physical": "true"
+                },
+                {
+                  "shape": "rectangle 150 10",
+                  "pos": "-1294 414",
+                  "attached": "true",
+                  "id": "$30",
+                  "physical": "true"
+                },
+                {
+                  "shape": "rectangle 150 10",
+                  "pos": "-1451 412",
+                  "attached": "true",
+                  "id": "$31",
+                  "physical": "true"
+                },
+                {
+                  "shape": "rectangle 150 10",
+                  "pos": "541 311",
+                  "attached": "true",
+                  "id": "$34",
+                  "physical": "true"
+                },
+                {
+                  "shape": "rectangle 150 10",
+                  "pos": "694 311",
+                  "attached": "true",
+                  "id": "$35",
+                  "physical": "true"
+                },
+                {
+                  "shape": "rectangle 150 10",
+                  "pos": "846 310",
+                  "attached": "true",
+                  "id": "$36",
+                  "physical": "true"
+                },
+                {
+                  "shape": "rectangle 150 10",
+                  "pos": "1000 310",
+                  "attached": "true",
+                  "id": "$38",
+                  "physical": "true"
+                },
+                {
+                  "shape": "rectangle 150 10",
+                  "pos": "1154 310",
+                  "attached": "true",
+                  "id": "$39",
+                  "physical": "true"
+                },
+                {
+                  "shape": "rectangle 150 10",
+                  "pos": "148 189",
+                  "attached": "true",
+                  "id": "$41",
+                  "physical": "true"
+                },
+                {
+                  "shape": "rectangle 1500 10",
+                  "pos": "-1548 181",
+                  "attached": "true",
+                  "id": "$44",
+                  "physical": "true"
+                },
+                {
+                  "rotable": "true",
+                  "pos": "60 331",
+                  "id": "$15",
+                  "physical": "true"
+                },
+                {
+                  "rotable": "true",
+                  "pos": "35 253",
+                  "id": "$16",
+                  "physical": "true"
+                },
+                {
+                  "pos": "347 139",
+                  "id": "$9",
+                  "physical": "true"
+                },
+                {
+                  "shape": "rectangle 150 10",
+                  "pos": "440 311",
+                  "attached": "true",
+                  "id": "$33",
+                  "physical": "true"
+                },
+                {
+                  "shape": "rectangle 150 10",
+                  "pos": "203 415",
+                  "attached": "true",
+                  "id": "$11",
+                  "physical": "true"
+                },
+                {
+                  "rotable": "true",
+                  "pos": "372 -312",
+                  "id": "$25",
+                  "physical": "true"
+                },
+                {
+                  "rotable": "true",
+                  "pos": "14 64",
+                  "id": "$mala-1",
+                  "physical": "true"
+                },
+                {
+                  "shape": "rectangle 150 10",
+                  "pos": "287 813",
+                  "attached": "true",
+                  "id": "$22",
+                  "physical": "true"
+                },
+                {
+                  "showXML": "true",
+                  "size": "720 480",
+                  "pos": "439 311",
+                  "id": "$8",
+                  "type": "frame",
+                  "title": "XML pohled na 'U Vincka doma'",
+                  "guiStuff": "true",
+                  "cam": "-198 -21",
+                  "target": "$doma"
+                },
+                {
+                  "shape": "rectangle 150 10",
+                  "pos": "135 813",
+                  "attached": "true",
+                  "id": "$32",
+                  "physical": "true"
+                },
+                {
+                  "shape": "rectangle 150 10",
+                  "pos": "-14 813",
+                  "attached": "true",
+                  "id": "$37",
+                  "physical": "true"
+                },
+                {
+                  "shape": "rectangle 150 10",
+                  "pos": "-212 812",
+                  "attached": "true",
+                  "id": "$40",
+                  "physical": "true"
+                },
+                {
+                  "shape": "rectangle 150 10",
+                  "pos": "-359 812",
+                  "attached": "true",
+                  "id": "$42",
+                  "physical": "true"
+                },
+                {
+                  "shape": "rectangle 150 10",
+                  "pos": "-504 812",
+                  "attached": "true",
+                  "id": "$45",
+                  "physical": "true"
+                },
+                {
+                  "shape": "rectangle 150 10",
+                  "pos": "-650 812",
+                  "attached": "true",
+                  "id": "$46",
+                  "physical": "true"
+                },
+                {
+                  "shape": "rectangle 150 10",
+                  "pos": "-791 812",
+                  "attached": "true",
+                  "id": "$47",
+                  "physical": "true"
+                },
+                {
+                  "shape": "rectangle 150 10",
+                  "pos": "-353 187",
+                  "attached": "true",
+                  "id": "$49",
+                  "physical": "true"
+                },
+                {
+                  "shape": "rectangle 150 10",
+                  "pos": "-198 188",
+                  "attached": "true",
+                  "id": "$48",
+                  "physical": "true"
+                },
+                {
+                  "pos": "-259 10",
+                  "attached": "true",
+                  "id": "$prvni-mince",
+                  "type": "coin",
+                  "physical": "true"
+                },
+                {
+                  "pos": "-391 7",
+                  "attached": "true",
+                  "id": "$43",
+                  "type": "coin",
+                  "physical": "true"
+                },
+                {
+                  "pos": "-509 5",
+                  "attached": "true",
+                  "id": "$50",
+                  "type": "coin",
+                  "physical": "true"
+                },
+                {
+                  "pos": "-524 280",
+                  "attached": "true",
+                  "id": "$51",
+                  "type": "coin",
+                  "physical": "true"
+                },
+                {
+                  "pos": "-411 270",
+                  "attached": "true",
+                  "id": "$52",
+                  "type": "coin",
+                  "physical": "true"
+                },
+                {
+                  "pos": "-268 273",
+                  "attached": "true",
+                  "id": "$53",
+                  "type": "coin",
+                  "physical": "true"
+                },
+                {
+                  "pos": "-143 265",
+                  "attached": "true",
+                  "id": "$54",
+                  "type": "coin",
+                  "physical": "true"
+                },
+                {
+                  "pos": "-642 276",
+                  "attached": "true",
+                  "id": "$55",
+                  "type": "coin",
+                  "physical": "true"
+                }
+              ]
+            },
+            {
+              "pos": "100 22",
+              "id": "$obchod",
+              "inside": [
+                {
+                  "rotable": "true",
+                  "pos": "34 -41",
+                  "id": "$ta-co-spadne",
+                  "physical": "true"
+                },
+                {
+                  "rotable": "true",
+                  "pos": "60 18",
+                  "id": "$ta-co-ji-pomuze",
+                  "physical": "true"
+                },
+                {
+                  "shape": "rectangle 150 10",
+                  "pos": "85 208",
+                  "attached": "true",
+                  "id": "$19",
+                  "physical": "true"
+                },
+                {
+                  "shape": "rectangle 150 10",
+                  "pos": "-221 308",
+                  "attached": "true",
+                  "id": "$20",
+                  "physical": "true"
+                },
+                {
+                  "showXML": "true",
+                  "size": "720 130",
+                  "pos": "-223 324",
+                  "id": "$21",
+                  "type": "frame",
+                  "title": "XML pohled na 'Malý svět'",
+                  "guiStuff": "true",
+                  "target": "$obchod"
+                },
+                {
+                  "shape": "rectangle 150 10",
+                  "pos": "-13 264",
+                  "attached": "true",
+                  "id": "$17",
+                  "physical": "true"
+                },
+                {
+                  "shape": "rectangle 150 10",
+                  "pos": "204 306",
+                  "attached": "true",
+                  "id": "$18",
+                  "physical": "true"
+                }
+              ]
+            }
+          ],
+          "title": "Příběh",
+          "guiStuff": "true",
+          "cam": "0 0"
+        }
+      ],
+      "guiStuff": "true"
+    }],
+    "title": "Loď bláznů",
+    "guiStuff": "true",
+    "target": "$main"
+  }]
+}]}

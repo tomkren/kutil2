@@ -1,0 +1,18 @@
+{
+
+  "number-example" : 42,
+  "string-example" : "foobar",
+  "object-example" : { "foo" : 23 },
+  "list-example"   : ["foo", "bar", 23, 42],
+
+  "function-example" : { "x" : [ "x" , "+" , 42 ] },
+
+  "add1" : { "x" : ["x", "+", 1] },
+
+  "omega" : {"x":[["x","x"],["x","x"]]},
+
+  "*2" : {"x": [
+    "+","x","x"
+  ]}
+
+}

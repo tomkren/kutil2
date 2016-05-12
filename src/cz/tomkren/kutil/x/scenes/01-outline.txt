@@ -1,0 +1,38 @@
+Vincent je členem letitého a slovutného provaznického rodu (něco jako vědecká aristokracie).
+Studuje v provaznickém cechu na mistra provazníka.
+Studium ho opravdu baví, ale je rozerván pocitem, že zaseknutím se na provazech provaznické umění plně nevyužívá svůj
+obecný potenciál. Je fascinován špagátikou (Tokkostská věda ekvivalentní informatice realizující se nad “provazovými
+tkalcovskými turingovskými stravy”) a tak jí cítí ve všem, což je v kontrastu s konzervativním učením provaznického
+cechu, jehož je jeho rod od nepaměti součástí. Cech totiž chápe hledání špagátiky jinde než v provazových strojích
+za pavědu. A koketovat s pavědou (zvlášť pokud jste mladíkem v etablovaném rodu špagátníků) je v tomto městě
+obzvlášť hazardní.
+Vincek je v tomto ohledu nerozvážným mladickým rebelem a tak mu tu a tam ujede nějaká nevhodná poznámka;
+či dokonce, v záchvatu naivity a pod náporem dobrého ale neklasického nápadu, něco kontroverzního oficiálně navrhne
+jako řešení. (Rodiče pro něj mají pochopení, ale zároveň na něj tlačí, aby si nekazil reputaci a své nápady realizoval
+jen potají - tím spíš že kvůli jeho reputaci přichází k úhoně i jejich reputace.)
+
+Vynálezy:
+
+Je jich několik, na high-levelu tvoří konzistentní celek, ale tento celek prohlédne až Horajz při špiclování.
+Sám Vincek tento celek tuší jen intuitivně, první explicitní vyslovení je až od Horacia (oficiální znení Horajzova jména).
+
+Jeden z vynálezů je fyzická examplifikace krabičkovýho principu v TIMovskym (the incredible machines) duchu.
+(Např něco jako ta naše kalkulačka.)
+
+Další vynález obsahuje ekonomické interakce.
+Vincent si udržuje populaci nákupních-a-prodejních strategií, kterym pravidelně ve fitness-proporčních poměrech
+rozděluje část svýho kapesnýho. Ty který hospodařej líp tak dostávaj dál větší poměr.
+Nepoužívá tohle názvosloví, ale kryptičtější, ale zároveň přirozenější pro Tokkost.
+
+Další vynález by mohl bejt ohledně zobrazování textů a procesů v 2D způsobu - na rozdíl od 1D provazového způsobu,
+kterym se v Tokkosti píše a počítá - a tedy způsobem jakym to děláme my.
+Jedná se o propojení turingovskejch a tkalcovskejch stavů, tzn že se uplete plátno do kterého se vplétají jehlou
+linky - digitální mřížka a do které se vkreslují křivky. Ať už ku kreslení či psaní.
+
+Bylo by dobrý to napasovat na XAOS, zatim máme:\\\\
+TIM-krabice ... A \\
+obchodníčci ... S \\
+2D vizualizace ... O \\
+A teda zbývá X.
+
+

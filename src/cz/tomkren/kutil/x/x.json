@@ -1,0 +1,441 @@
+{
+  "title": "Loď bláznů: Vincent a tekutí dědci",
+  "scenesPerAct" : 16,
+
+  "meta": {
+    "outputs": [
+      {"file": "game.json",          "medium":"game", "args": {"template": "game"}},
+      {"file": "index.html",         "medium":"book", "args": {"template": "html","commented": true, "script": true}},
+      {"file": "commented-book.tex", "medium":"book", "args": {"template": "tex", "commented": true }},
+      {"file": "commented-book.txt", "medium":"book", "args": {"template": "txt", "commented": true }},
+      {"file": "pure-book.tex",      "medium":"book", "args": {"template": "tex", "commented": false}},
+      {"file": "scenes.txt",         "medium":"scenes"}
+    ]
+  },
+
+  "acts": [
+    {"title": "Rozpolcení"},
+    {"title": "Tuhnutí"},
+    {"title": "Dialog"},
+    {"title": "Stvoření"}
+  ],
+
+  "subActs": [
+    {"title": "Ve městě"},
+    {"title": "Na lodi"},
+
+    {"title": "Kontakt"},
+    {"title": "Přípravy"},
+
+    {"title": "Bitvy"},
+    {"title": "Mír"},
+
+    {"title": "Luštění"},
+    {"title": "Konstrukce"}
+
+  ],
+
+  "chapters": [
+    {"title": "Vincentovi vynálezy"},
+    {"title": "Proces"},
+    {"title": "Na Lodi"},
+    {"title": "Zákruta"},
+
+    {"title": "1. cesta k dědkům"},
+    {"title": "Kapucín Anarx"},
+    {"title": "Dhe Mon Agh"},
+    {"title": "Mračna se stahují"},
+
+    {"title": "2. cesta k dědkům"},
+    {"title": "Bouře"},
+    {"title": "Protibouře"},
+    {"title": "Rozbřesk"},
+
+    {"title": "Stroj"},
+    {"title": "Hra"},
+    {"title": "Text"},
+    {"title": "2. čtení"}
+
+  ],
+
+  "scenes": [
+    {
+      "title": "U Vincenta doma",
+      "structure": "Exposition",
+      "notes": ["Vincent je nám představen a vidíme jeho tajné vynálezy."],
+      "outline": {"resource": "scenes/01-outline.txt"},
+      "pages": {"resource": "scenes/01--U-Vincenta-doma.txt"},
+      "level": {"resource": "scenes/01-level.json"}
+    },
+    {
+      "title": "Na trhu",
+      "notes": [
+        "Vincent na trhu kupuje kachny a jede je vypustit",
+        "Horajz ho přitom sleduje a 'pochopí Vincentův high-level'."
+      ],
+      "outline": {"resource": "scenes/02-outline.txt"},
+      "pages":   {"resource": "scenes/02-Na-trhu.txt"}
+    },
+    {
+      "title": "Na Výpusti",
+      "notes": []
+    },
+    {
+      "structure": "Inciting incident",
+      "title": "Proces",
+      "notes": [],
+      "outline": {"resource": "scenes/04-Proces.txt"},
+      "pages": [[
+        "... Horajz zakončí svou řeč básní:",
+        "'Koukám - hrajeme hru:",
+        "Kniha stroj komentuje.",
+        "Kniho, hře buď předlohou!",
+        "Ať stroj se hrou vykresluje.'"
+      ]]
+    },
+    {
+      "title": "Čekání",
+      "notes": ["Vincent ve vězení"]
+    },
+    {
+      "title": "Sebepráskač",
+      "notes": [
+        "Horajz se udá.",
+        "Zmínka o tom, že Horajz má rodinu."
+      ]
+    },
+    {
+      "title": "Loď vyplouvá",
+      "notes": [],
+      "outline": {"resource": "scenes/07-Lod-vyplouva.txt"}
+    },
+    {
+      "title": "Průzkum",
+      "notes": [
+        "Vincent dělá průzkum lodi",
+        "První záchvěvy 'palubní mapy'."]
+    },
+    {
+      "title": "",
+      "notes": [],
+      "outline": {"resource": "scenes/09-outline.txt"}
+    },
+    {
+      "title": "Incident na Vnější Výpusti",
+      "notes": [],
+      "outline": [[
+        "Na vnější výpusti, kde se má personál od lodi odpojit dojde k chaosu,",
+        "při kterém kormidelník a dcera nestihnou vystoupit a tak zůstanou na lodi.",
+        "Stejně tak i jinoch, ten to má však v plánu od začátku.",
+        "Neví se proč se tak stalo a celá situace působí dost divně."]]
+    },
+    {
+      "title": "Kormidlo",
+      "notes": [
+        "Za výpustí je třeba loď dále kormidlovat.",
+        "Kolem tohoto úkolu se ochomítá několik osob",
+        "hlavně veřejně aktivní Horajz a původní kormidelník",
+        "Horajz a kormidelník se tím dostávají do konfliktu.",
+        "Ve scéně vystupuje i kapitánova dcerka a dítě bezďák"]
+    },
+    {
+      "title": "Vyšetřování",
+      "notes": ["Horajz se jakožto bývalý agent rozhodne, že tuto divnou událost vyšetří."],
+      "outline": {"resource": "scenes/12-outline.txt"}
+    },
+    {
+      "title": "Lodní proces",
+      "notes": [
+        "Lodní proces o Incidentu",
+        "Proces je však předčasně přerušen vjetím do Zákruty šílenců."]
+    },
+    {
+      "title": "Zákruta Šílenců",
+      "notes": [
+        "Únik ze Zákruty Šílenců pomocí Vincentova TIM-like contraptionu kterej foukne do plachet",
+        "Horajz se přitom odpojuje od skupiny a začíná jeho dobrodružství v Zákrutě."]
+    },
+    {
+      "title": "Idyla",
+      "notes": ["Dění na lodi po odchodu Horajze"]
+    },
+    {
+      "title": "Zákruťský Trh",
+      "notes": [
+        "Horajz potkává Katze na Zákruťském Trhu",
+        "A letmo potkává i Anarxa.",
+        "Od Katze kupuje substanci x."]
+    },
+    {
+      "title": "Vstup do Válce",
+      "structure": "1st plot turning point",
+      "notes": [
+        "Vincent na snové louce.",
+        "Zvážit zda předělat na psaní pomocí uzlování provazů.."],
+      "outline": {"resource": "scenes/17-outline.txt"},
+      "pages": {"resource": "scenes/17-Vstup-do-Valce.txt"}
+    },
+    {
+      "title": "Vincent potkává dědka Cikádu",
+      "notes": [],
+      "outline": {"resource": "scenes/18-outline.txt"}
+    },
+    {
+      "title": "Vincent potkává Pranexa",
+      "notes": []
+    },
+    {
+      "title": "Horajz zakládá Kapucíny",
+      "notes": [
+        "V době kdy je v Zákrutě",
+        "Anarx opouští Zákrutu"],
+      "outline": {"resource": "scenes/20-outline.txt"}
+    },
+    {
+      "title": "Návrat Proroka",
+      "notes": [
+        "Horajz se vrací na Loď s Kapucíny",
+        "Od návratu je v této scéně ještě popsán celkem delší časový úsek, aby nebyli hned v Šnekově Kloubci."]
+    },
+    {
+      "title": "Šnekův Kloubec",
+      "notes": [
+        "Loď přijíždí do Šnekova Kloubce a Anarx poprvé potkává Dhé U Chlupaté Tety.",
+        "Pak by to možná chtělo ubrat/zvolnit na šohajskosti, ale tak nějak prostě Anarx přemejšlí, tak je to trochu v koncentrovanější podobě halt, aby měla jeho osobnost možnost naboptnat.",
+        "Zvuková ochutnávka viz youtube.com/user/sekol"],
+      "outline": {"resource": "scenes/22-outline.txt"},
+      "pages":   {"resource": "scenes/22-Snekuv-Kloubec.txt" }
+    },
+    {
+      "title": "Operace Hřbitov",
+      "notes": [
+        "Vincent operuje na hřbitově",
+        "Ve Šnekově Kloubci, kde naberou Anarxa.",
+        "... Ale nejvíce si toho načte v Dolfírově sklepení sníce v klidu svého lůžka. (přesunout po Dolfírovi)"],
+      "pages": {"resource": "scenes/23-Operace-Hrbitov.txt"}
+    },
+    {
+      "title": "Anarx se přidává na loď",
+      "notes": ["a seznamuje se s Vincentem"],
+      "outline": {"resource": "scenes/24-outline.txt"}
+    },
+    {
+      "title": "Sebešpicl",
+      "notes": [
+        "Zlatá éra kapucínského sebe-špiclování Horajze",
+        "Během kterého se Kapucíni učí Horajze 'nazpaměť i z provázku'."],
+      "outline": {"resource": "scenes/25-outline.txt"}
+    },
+    {
+      "title": "Obchodník Katz",
+      "notes": [
+        "Vincent potkává obchodníka Katze",
+        "Loď kotví ve městě, kde se seznamujeme (asi) s eko-(logií/nomikou) včel a stromů."],
+      "outline": {"resource": "scenes/26-outline.txt"}
+    },
+    {
+      "title": "Dhe Mon Agh",
+      "notes": [
+        "Anarx staví Sukubí Hamaku ze surovin od Katze",
+        "Další ženskou postavou na lodi je Thér; mezi Traalem, Thér, Dé a Traalovým kladkostrojem pomalu vzniká milostný čtyřstěn."],
+      "outline": {"resource": "scenes/27-outline.txt"},
+      "pages":   {"resource": "scenes/27-Dhe-Mon-Agh.txt"}
+    },
+    {
+      "title": "Dhé zasvěcuje Anarxa do 'principu loutek'",
+      "notes": [
+        "Anarxovo seznámení s Podhoubím a jeho principy, které využije při návrhu Golema a pro další zdokonalení hamaky.",
+        "Výjev, kde Anarx dostane do ruky svou malou loutku, kterou ovládá své tělo."]
+    },
+    {
+      "title": "Horajz osnuje útok na Vincenta",
+      "notes": ["Je u toho i Anarx."]
+    },
+    {
+      "title": "Anarx informuje Vincenta o útoku na něj",
+      "notes": []
+    },
+    {
+      "title": "Regiment",
+      "notes": ["Vincent buduje obranný nemrtvý regiment proti Horajzovu útoku"]
+    },
+    {
+      "title": "Vincent získává L-ingredienci",
+      "notes": [
+        "Co přesně je L-ingredience?", [
+          "Patrně se skombinuje s lupou, kterou si Vincent brzo Vysoustruží"],
+        "? asi tržní interakcí kolem Katze ?"
+      ]
+    },
+    {
+      "title": "Sjednocující Rozhraní",
+      "structure": "Central character turning point",
+      "notes": [
+        "Anarx přemlouvá Vincenta ať se spojí s Horajzem",
+        "Vincent tento plán odmítá, zase je to do něj ale semínko pochyby."]
+    },
+    {
+      "title": "Vincent potkává Gendolfüra",
+      "notes": [
+        "Říká mu i o substanci x.",
+        "A hecuje ho k boji s Horajzem.",
+        "Zrcadlová tématika, analogicky k tomu, že dědek potrat je podobnej Horajzovi..."]
+    },
+    {
+      "title": "Vincent poprvé Soustruží",
+      "notes": [
+        "Co vysoustruží? A co si odnese?", [
+          "Mohla by to být 'zmenšovací lupa', umožňující zmenšovat předměty i lidi.",
+          "Takže se otvírají nový možnosti pro:", [
+            "Palubní mapu",
+            "ZL-mlýnek"
+          ]
+        ]]
+    },
+    {
+      "title": "Horajz plánuje útok",
+      "notes": ["Těsně před bitvou a začátek bitvy."],
+      "tags":  ["natržená"],
+      "pages": [[], [], [], []]
+    },
+    {
+      "title": "Vincent nekromancií odráží Horajzův útok",
+      "notes": ["Kapucíni utrpí podstatnou ztrátu."]
+    },
+    {
+      "title": "Plány na Golema",
+      "notes": ["Anarx s Horajzem plánují golema 'loutkovým principem'."]
+    },
+    {
+      "title": "",
+      "notes": []
+    },
+    {
+      "title": "ZL-mlýnek",
+      "notes": ["Anarx Vincentovi pomáhá rozluštit záhadu ZL-mlýnku."]
+    },
+    {
+      "title": "Golemovská Montáž",
+      "notes": [
+        "Zachycuje delší časové období ve zrychleném sledu (montage)",
+        ".. toho jak kapucíni provádějí montáž Golema."
+      ]
+    },
+    {
+      "title": "Víc než regiment",
+      "notes": ["Vincent šlechtí mlýnkem světy a zombie v přípravě na útok na Horajze."],
+      "outline": {"resource":"scenes/42-outline.txt"}
+    },
+    {
+      "title": "Vložení Šému",
+      "notes": [
+        "Horajz si naplno a definitivně napojuje Golema.",
+        "Tím, že dává Golemovi definitivně svou loutku."]
+    },
+    {
+      "title": "Nad Plánem",
+      "notes": ["Vincent plánuje útok nad palubní mapou světa."]
+    },
+    {
+      "title": "Horajzovo Satori",
+      "notes": [],
+      "outline": {"resource": "scenes/45-outline.txt"}
+    },
+    {
+      "title": "Vincent útočí na Horajze",
+      "notes": []
+    },
+    {
+      "title": "Vincent ušetří Horajze",
+      "notes": []
+    },
+    {
+      "title": "Trialog",
+      "notes": ["Trialog o zvnitřnění Tokkosti"]
+    },
+    {
+      "title": "Rozvázali si Jazyk",
+      "structure": "2nd plot turning point",
+      "notes": ["Trojice rozluštila 'Jazyk'."]
+    },
+    {
+      "title": "",
+      "notes": []
+    },
+    {
+      "title": "Stroj času",
+      "notes": ["S pomocí Pranexa si vysoustruží 'příběhový stroj času'"]
+    },
+    {
+      "title": "Vrátěj se do minulosti pro zapomenutou kartu",
+      "notes": []
+    },
+    {
+      "title": "",
+      "notes": []
+    },
+    {
+      "title": "Dhé vede trojici do Podhoubí",
+      "notes": ["Učí je slack-lining na pavoučích sítích."]
+    },
+    {
+      "title": "Nájezd na Dědčí věž",
+      "notes": []
+    },
+    {
+      "title": "",
+      "notes": []
+    },
+    {
+      "title": "Konstrukce O",
+      "notes": ["Trio naprogramuje Kutila/Hru."]
+    },
+    {
+      "title": "",
+      "notes": []
+    },
+    {
+      "title": "",
+      "notes": []
+    },
+    {
+      "title": "",
+      "notes": []
+    },
+    {
+      "title": "Celý balík",
+      "structure": "Climax",
+      "notes": [
+        "Konstrukce substance X",
+        "Nebo snad fiX?",
+        "Trio poskládá karty ve správném pořadí.",
+        "? nebo spíš fix je pevnej ale to co vytvořej dělá tomu ten kontext (pro 2. čtení) ?",
+        "x je bootovací sekvence O (Kutila) text této knihy - TRIO JI SEPÍŠE.",
+        "Naproti tomu herní climax je patrně prolezení zrcadlem a 'povýšení' z herní figurky na side-kicka."]
+    },
+    {
+      "title": "",
+      "notes": ["Dozvěděj se, že dědci to tak chtěli."]
+    },
+    {
+      "title": "Zasunutí X do O"
+    },
+    {
+      "title": "Rozuzlení",
+      "notes": [
+        "Návod na 2. čtení",
+        "Hrdinové 'lezou do svých dědků':",[
+          "Vincent do Dolfíra,",
+          "Horajz do Cikády,",
+          "Anarx do Katze,",
+          "Dědci do Metadědků.",
+          "A Dé zůstává Dé."]]
+    }
+  ],
+
+  "svgs": [
+    {"resource": "svgs/bone.json"},
+    {"resource": "svgs/coin-front.json"},
+    {"resource": "svgs/skull.json"}
+  ]
+}

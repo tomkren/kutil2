@@ -1,0 +1,148 @@
+{
+  "stepsPerAction" : 10,
+
+  "physicalShape" : ["0,0", "50,0", "50,190", "0,190"],
+  "friction" : 110.0,
+
+  "walk" : {
+    "coolDown": 6,
+    "maxSpeed": 51.75,
+    "stepSize": 34.5
+  },
+
+  "jump" : {
+    "coolDown": 80,
+    "x": 30,
+    "y": 65
+  },
+
+  "nodes": [
+    "headTop","head","shoulders","pelvis",
+    "frontElbow","frontWrist","frontFingers",
+    "backElbow","backWrist","backFingers",
+    "frontKnee","frontHeel","frontToes",
+    "backKnee","backHeel","backToes"],
+
+  "skeleton": [
+    ["pelvis","backKnee"],["backKnee","backHeel"],["backHeel","backToes"],
+    ["pelvis","frontKnee"],["frontKnee","frontHeel"],["frontHeel","frontToes"],
+    ["shoulders","pelvis"],
+    ["shoulders","backElbow"],["backElbow","backWrist"],["backWrist","backFingers"],
+    ["shoulders","frontElbow"],["frontElbow","frontWrist"],["frontWrist","frontFingers"],
+    ["head","shoulders"],
+    ["headTop","head","skull"]
+  ],
+
+  "resources": {
+    "bone":  "/cz/tomkren/kutil/x/svgs/bone.json",
+    "skull": "/cz/tomkren/kutil/x/svgs/skull.json"
+  },
+
+  "defaultBone" : "bone",
+
+  "balls": [{"center": "head", "radius": 30}],
+  "posDelta": "26,52",
+
+  "showPhysicalBody": false,
+
+  "defaultAnimation" : "walkRight",
+
+  "animations" : {
+	"standFront": [{
+	  "name" :        "defaultFront",
+	  "center":       "1340,166",
+      "headTop":      "1340,-20",
+      "head":         "1340,40",
+	  "shoulders":    "1340,104",
+	  "pelvis":       "1340,238",
+	  "frontElbow":   "1255,151",
+	  "frontWrist":   "1276,238",
+	  "frontFingers": "1268,269",
+	  "backElbow":    "1428,151",
+	  "backWrist":    "1406,238",
+	  "backFingers":  "1414,269",
+	  "frontKnee":    "1292,349",
+	  "frontHeel":    "1341,441",
+	  "frontToes":    "1292,441",
+	  "backKnee":     "1389,349",
+	  "backHeel":     "1369,441",
+	  "backToes":     "1418,441"
+	}],
+	"walkLeft": "flip walkRight x",
+	"walkRight": [
+	  {
+		"name":         "contact",
+		"center":       "277,166",
+		"head":         "283,68",
+		"shoulders":    "279,117",
+		"pelvis":       "263,244",
+		"frontElbow":   "214,174",
+		"frontWrist":   "197,249",
+		"frontFingers": "163,276",
+		"backElbow":    "316,211",
+		"backWrist":    "351,257",
+		"backFingers":  "355,292",
+		"backKnee":     "223,343",
+		"backHeel":     "136,391",
+		"backToes":     "160,441",
+		"frontKnee":    "326,351",
+		"frontHeel":    "374,441",
+		"frontToes":    "416,401"
+	  },{
+		"name":         "down",
+		"center":       "453,166",
+		"head":         "458,92",
+		"shoulders":    "452,141",
+		"frontElbow":   "370,192",
+		"frontWrist":   "327,264",
+		"frontFingers": "294,270",
+		"backElbow":    "506,226",
+		"backWrist":    "561,264",
+		"backFingers":  "579,291",
+		"pelvis":       "429,281",
+		"backKnee":     "383,361",
+		"backHeel":     "295,382",
+		"backToes":     "284,442",
+		"frontKnee":    "506,348",
+		"frontHeel":    "479,441",
+		"frontToes":    "534,441"
+	  },{
+		"name":         "pass",
+		"center":       "638,166",
+		"head":         "648,50",
+		"shoulders":    "644,103",
+		"frontElbow":   "623,206",
+		"frontWrist":   "634,298",
+		"frontFingers": "612,330",
+		"backElbow":    "627,200",
+		"backWrist":    "661,273",
+		"backFingers":  "674,300",
+		"pelvis":       "626,239",
+		"backKnee":     "661,337",
+		"backHeel":     "569,340",
+		"backToes":     "555,394",
+		"frontKnee":    "617,345",
+		"frontHeel":    "593,441",
+		"frontToes":    "645,441"
+	  },{
+		"name":         "up",
+		"center":       "826,167",
+		"head":         "845,28",
+		"shoulders":    "836,79",
+		"frontElbow":   "850,185",
+		"frontWrist":   "893,259",
+		"frontFingers": "887,301",
+		"backElbow":    "768,179",
+		"backWrist":    "799,240",
+		"backFingers":  "801,282",
+		"pelvis":       "813,221",
+		"backKnee":     "884,302",
+		"backHeel":     "813,371",
+		"backToes":     "835,410",
+		"frontKnee":    "768,315",
+		"frontHeel":    "716,406",
+		"frontToes":    "757,441"
+	  }
+	]
+  }
+}

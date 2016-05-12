@@ -1,0 +1,51 @@
+{
+  "defaultStateFile": "x/game.json",
+
+  "startServer": true,
+  "port": 4223,
+  "showGUI": true,
+
+  "defaultState": "/cz/tomkren/kutil/xml/main.json",
+  "defaultXmlFile": "main.xml",
+  "performXmlLoadTest": true,
+
+  "autoPlay": true,
+
+  "keyBindings" : {
+    "UP":              "player jump default",
+    "DOWN":            "player front",
+    "LEFT":            "player go left",
+    "RIGHT":           "player go right",
+    "W":               "player jump default",
+    "S":               "player front",
+    "A":               "player go left",
+    "D":               "player go right",
+    "SPACE":           "player jump default",
+    "shift UP":        "player jump up",
+    "shift RIGHT":     "player jump right",
+    "shift LEFT":      "player jump left",
+    "ENTER":           "enter",
+    "BACK_SPACE":      "leave",
+    "DELETE":          "delete",
+    "control Z":       "undo",
+    "control shift Z": "redo",
+    "control C":       "copy",
+    "control V":       "pasteToCursor",
+    "control X":       "cut",
+    "P":               "play",
+    "I":               "showInfo",
+    "C":               "changeInsertMode"
+  },
+
+  "popupMenu" : [
+    {"name":"play/pause","cmd":"play"},
+    "undo",
+    "redo",
+    "copy",
+    {"name":"paste","cmd":"pasteToCursor"},
+    {"name":"cut","cmd":"cut"},
+    {"name":"show XML", "cmd":"showXML"},
+    {"name":"copy to cursor", "cmd":"copyToCursor"}
+  ]
+
+}

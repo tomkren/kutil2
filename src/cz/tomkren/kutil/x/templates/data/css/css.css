@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'lm-otf';
+    src: url('../fonts/lmroman12-regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'lm-otf';
+    font-style: italic;
+    src: url('../fonts/lmroman12-italic.otf') format('opentype');
+}
+@font-face {
+    font-family: 'lm-otf';
+    font-weight: bold;
+    src: url('../fonts/lmroman12-bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'lm-ttf';
+    src: url('../fonts/lmroman12-regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'lm-ttf';
+    font-style: italic;
+    src: url('../fonts/lmroman12-italic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'lm-ttf';
+    font-weight: bold;
+    src: url('../fonts/lmroman12-bold.ttf') format('truetype');
+}
+
+html, body {
+    /*padding: 25px;*/
+    font-family: 'lm-otf', serif;
+    font-size: 15pt;
+    text-align: justify;
+    line-height: 110%;
+}
+
+h1 {
+    font-size: 29pt;
+    padding-top: 35px;
+}
+
+h2 {
+    font-size: 28pt;
+    padding-bottom: 70px;
+}
+
+h3 {
+    padding-bottom: 3px;
+}
+
+li {
+    padding-bottom: 15px;
+}
+
+.act-label {
+    font-size: 22pt;
+    font-weight: bold;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.up{
+    text-decoration: none;
+    color: #cccccc;
+}
+
+.sceneCanvas {
+    border: 1px solid black;
+}
+
+#book {
+    width : 667px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#author {
+    font-style: italic;
+    text-align: right;
+    padding-bottom: 80px;
+}
+#info {
+    padding-top: 25px;
+    /*padding-bottom: 25px;*/
+    /*font-style: italic;*/
+}
+
+#scenes { }
+
+#cmd {width: 600px;}

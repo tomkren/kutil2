@@ -1,0 +1,3 @@
+Traal učí Vincenta provaznickému umění, Vincent ho na oplátku učí partiím z nekromancie. S podivem zjišťují, že ty dvě
+činnosti se sobě zatraceně podobají (mezi nekromancií a provaznictvím je dost podobnej vztah jako mezi lambda kalkulem
+(jazykem) a turingovym strojem (počítačem)).

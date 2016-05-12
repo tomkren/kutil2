@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Loď bláznů</title>
+
+    <link rel="stylesheet" href="data/css/css.css">
+
+    <script src="data/js/libs/jquery-1.11.3.js"></script>
+    <script src="data/js/libs/underscore-1.8.3.js"></script>
+
+    <script src="data/js/svgResource.js"></script>
+    <script src="data/js/drawer.js"></script>
+
+    <!-- <script type="application/javascript"
+            src="http://127.0.0.1:4223">
+    </script> -->
+
+</head>
+<body>
+
+<a name="up"></a>
+<div id="book">
+
+    <h1>THE-TITLE</h1>
+
+    <div id="info">
+    <p>
+        Loď bláznů je rodící se kniha a počítačová hra.
+        Na těchto stránkách můžete sledovat její aktuální podobu
+        a být svědky jejího růstu.
+        Dále si můžete prohlédnout
+        <a href="http://29488b2b9eb8179f15bb031940caf2fb.tomkren.cz">podsvětní pasáže</a>
+        této knihy; tedy čtenářsky nepřívětivý a mystikou opředený dokument,
+        z kterého povstává text, kód a dobrodružství Vincenta na Lodi bláznů.
+    </p>
+    <p>
+        Kniha i hra budou rozděleny do čtyř aktů po šestnácti scénách.
+        Na konci scény mohou být poznámky pro danou scénu (psány <i>kurzívou</i>),
+        které nejsou vždy určené pro čtenářovy zraky.
+        Zvlášť ne pro zraky těch, kteří se neradi dozvědí něco dopředu.
+        Proto zvažte, zda chcete pokračovat ve čtení,
+        nebo si radši chcete ještě chvíli počkat...
+    </p>
+    </div>
+    <!--<div id="author">sekol</div>-->
+
+
+
+    <br>
+    <div>
+
+        <div style="padding-bottom: 10px;">Experimentální vykreslení první scény hry:</div>
+        <div style="padding-bottom: 10px;">
+        <i>Hra běží na serveru. Krom toho lze pustit hru lokálně a odtud se na ní přepojit jako na lokální server.
+        Nebo jen nechat vykreslit počáteční stav z <a href="game.json">game-state souboru</a>.
+        V okénku níže zatím zobrazeno pouze uboze, v samotné hře je to s hezčí grafikou.
+        V okénku už jde posouvat (táhnutím) a zoomovat (kolečkem).</i></div>
+
+        <input id="radio-ferda"    type="radio" name="stejne" checked> Oficiální server  <br>
+        <input id="radio-local"    type="radio" name="stejne"> Lokální server (<a href="kutil.jar">stáhnout</a>)<br>
+        <input id="radio-drawOnly" type="radio" name="stejne"> Vykreslit počáteční stav
+
+        <br><br>
+
+        <canvas id="testCanvas" class="sceneCanvas" width="667" height="334"></canvas>
+
+        <br>
+
+        <b>cmd : </b><input id="cmd">
+        <div id="cmdLog"></div>
+
+
+    </div><br>
+
+    <br><p>
+        <a href="commented-book.pdf">PDF verze s <i>poznámkami</i></a><br>
+        <a href="pure-book.pdf">PDF verze bez <i>poznámek</i></a><br>
+        <a href="https://www.youtube.com/watch?v=QLifaZhb_oo" target="_blank">Audio-ochutnávka</a>
+        scény <a href="#2.6"><i>2.6 Šnekův Kloubec</i></a>
+    </p>
+
+
+
+
+
+
+    <div id="scenes">
+        BOND-HERE
+    </div>
+
+</div>
+
+
+
+<script></script>
+
+<script>
+
+    var scenes = gameState.kutil.inside[0].inside[0].inside[0].inside;
+
+    var homeScene = scenes[0];
+
+    var drawer = mkDrawer({
+        canvasId: 'testCanvas',
+        scene: homeScene,
+        scale: 0.21,
+        dx: 1681,
+        dy: 377,
+        zoomFactor: 1.25
+    });
+
+    function serverUpdate(serverGameState) {
+        var firstScene = serverGameState.inside[0].inside[0];
+        drawer.draw(firstScene);
+    }
+
+    var ferdaUrl = "http://ferda.tomkren.cz:4223";
+    var localUrl = "http://127.0.0.1:4223";
+
+    var serverUrl = ferdaUrl;
+
+    var cmdBuffer = undefined;
+
+    function clientUpdate() {
+        if (serverUrl !== undefined) {
+
+            var data = {};
+
+            if (cmdBuffer !== undefined) {
+                data.cmd = cmdBuffer;
+                cmdBuffer = undefined;
+            }
+
+            $.ajax({ // Using JSONP
+                url: serverUrl,
+                jsonp: "serverUpdate",          // The name of the callback parameter
+                dataType: "jsonp",              // Tell jQuery we're expecting JSONP
+                data: data                      // Tell what we want
+            });
+        }
+    }
+
+    $(function() {
+
+        $('#radio-ferda').click(function() {
+            serverUrl = ferdaUrl;
+        });
+        $('#radio-local').click(function() {
+            serverUrl = localUrl;
+        });
+        $('#radio-drawOnly').click(function() {
+            serverUrl = undefined;
+            drawer.draw(homeScene);
+        });
+
+        var $cmd = $("#cmd");
+
+        $cmd.keyup(function (e) {
+            if (e.keyCode == 13) {
+
+                var val = $cmd.val();
+
+                $cmd.val('');
+
+                console.log("cmd: "+val);
+
+                $('#cmdLog').prepend('<i>'+val+'</i><br>');
+
+                cmdBuffer = val;
+
+            }
+        });
+
+
+        drawer.draw();
+
+        setInterval(function() {
+            clientUpdate();
+        }, 100);
+
+    });
+</script>
+
+
+</body>
+</html>

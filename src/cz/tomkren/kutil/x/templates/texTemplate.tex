@@ -1,0 +1,41 @@
+\documentclass[a4paper,oneside]{memoir}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{lmodern}
+
+\usepackage[czech]{babel}
+\usepackage{amsmath,amssymb,mathtools,bm}
+\usepackage{lipsum}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\title{THE-TITLE}
+
+\author{Tomáš Křen}
+
+\hyphenation{vě-dec-ká}
+
+\begin{document}
+
+\frontmatter
+\mainmatter
+\maketitle
+
+\renewcommand{\chaptername}{Akt}
+
+\tableofcontents*
+%\clearpage
+
+BOND-HERE
+
+\backmatter
+\end{document}

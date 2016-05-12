@@ -1,0 +1,77 @@
+{"kutil":
+  {"type":"time", "id":"$1", "inside": [
+    {
+      "type":"frame", "id":"$mainFrame", "pos":"20 20", "guiStuff":"true", "size":"1117 701", "target":"$main",
+      "title":"Loď bláznů : Vincent a tekutý dědci",
+      "inside": [
+      {"id":"$main", "guiStuff":"true", "main":"true", "inside": [
+        {"type":"button", "id":"$2", "pos":"30 30", "movable":"false", "guiStuff":"true", "title":"play/pause", "cmd":"play"},
+        {"type":"button", "id":"$3", "pos":"120 30", "movable":"false", "guiStuff":"true", "title":"changeInsertMode", "cmd":"changeInsertMode"},
+        {"type":"button", "id":"$4", "pos":"250 30", "movable":"false", "guiStuff":"true", "title":"showInfo", "cmd":"showInfo"},
+        {"type":"button", "id":"$5", "pos":"30 60", "movable":"false", "guiStuff":"true", "title":"undo", "cmd":"undo"},
+        {"type":"button", "id":"$6", "pos":"75 60", "movable":"false", "guiStuff":"true", "title":"redo", "cmd":"redo"},
+        {"type":"frame", "id":"$7", "pos":"10 100", "guiStuff":"true", "size":"1350 600", "cam":"-227 -93", "target":"$doma", "title":"U Vincenta doma"},
+        {"type":"frame", "id":"$14", "pos":"1368 100", "guiStuff":"true", "size":"545 570", "cam":"-227 -93", "target":"$obchod", "title":"Na trhu"},
+        {"type":"frame", "id":"$story", "pos":"561 4", "guiStuff":"true", "size":"545 70", "cam":"0 0", "title":"Příběh", "inside": [
+          {"id":"$doma", "pos":"22 22", "inside": [
+            {"type":"character", "id":"$vincent", "pos":"162 219", "physical":"true", "human":"true"},
+            {"type":"character", "id":"$kostra", "pos":"-1388 215", "physical":"true"},
+            {"id":"$12", "pos":"-219 416", "shape":"rectangle 150 10", "physical":"true", "attached":"true"},
+            {"id":"$13", "pos":"-63 415", "shape":"rectangle 150 10", "physical":"true", "attached":"true"},
+            {"id":"$10", "pos":"92 415", "shape":"rectangle 150 10", "physical":"true", "attached":"true"},
+            {"id":"$23", "pos":"-375 415", "shape":"rectangle 150 10", "physical":"true", "attached":"true"},
+            {"id":"$24", "pos":"-528 415", "shape":"rectangle 150 10", "physical":"true", "attached":"true"},
+            {"id":"$26", "pos":"-680 413", "shape":"rectangle 150 10", "physical":"true", "attached":"true"},
+            {"id":"$27", "pos":"-833 415", "shape":"rectangle 150 10", "physical":"true", "attached":"true"},
+            {"id":"$28", "pos":"-989 415", "shape":"rectangle 150 10", "physical":"true", "attached":"true"},
+            {"id":"$29", "pos":"-1144 415", "shape":"rectangle 150 10", "physical":"true", "attached":"true"},
+            {"id":"$30", "pos":"-1294 414", "shape":"rectangle 150 10", "physical":"true", "attached":"true"},
+            {"id":"$31", "pos":"-1451 412", "shape":"rectangle 150 10", "physical":"true", "attached":"true"},
+            {"id":"$34", "pos":"541 311", "shape":"rectangle 150 10", "physical":"true", "attached":"true"},
+            {"id":"$35", "pos":"694 311", "shape":"rectangle 150 10", "physical":"true", "attached":"true"},
+            {"id":"$36", "pos":"846 310", "shape":"rectangle 150 10", "physical":"true", "attached":"true"},
+            {"id":"$38", "pos":"1000 310", "shape":"rectangle 150 10", "physical":"true", "attached":"true"},
+            {"id":"$39", "pos":"1154 310", "shape":"rectangle 150 10", "physical":"true", "attached":"true"},
+            {"id":"$41", "pos":"148 189", "shape":"rectangle 150 10", "physical":"true", "attached":"true"},
+            {"id":"$44", "pos":"-1548 181", "shape":"rectangle 1500 10", "physical":"true", "attached":"true"},
+            {"id":"$15", "pos":"60 331", "physical":"true", "rotable":"true"},
+            {"id":"$16", "pos":"35 253", "physical":"true", "rotable":"true"},
+            {"id":"$9", "pos":"347 139", "physical":"true"},
+            {"id":"$33", "pos":"440 311", "shape":"rectangle 150 10", "physical":"true", "attached":"true"},
+            {"id":"$11", "pos":"203 415", "shape":"rectangle 150 10", "physical":"true", "attached":"true"},
+            {"id":"$25", "pos":"372 -312", "physical":"true", "rotable":"true"},
+            {"id":"$mala-1", "pos":"14 64", "physical":"true", "rotable":"true"},
+            {"id":"$22", "pos":"287 813", "shape":"rectangle 150 10", "physical":"true", "attached":"true"},
+            {"type":"frame", "id":"$8", "pos":"439 311", "guiStuff":"true", "size":"720 480", "cam":"-198 -21", "target":"$doma", "title":"XML pohled na 'U Vincka doma'", "showXML":"true"},
+            {"id":"$32", "pos":"135 813", "shape":"rectangle 150 10", "physical":"true", "attached":"true"},
+            {"id":"$37", "pos":"-14 813", "shape":"rectangle 150 10", "physical":"true", "attached":"true"},
+            {"id":"$40", "pos":"-212 812", "shape":"rectangle 150 10", "physical":"true", "attached":"true"},
+            {"id":"$42", "pos":"-359 812", "shape":"rectangle 150 10", "physical":"true", "attached":"true"},
+            {"id":"$45", "pos":"-504 812", "shape":"rectangle 150 10", "physical":"true", "attached":"true"},
+            {"id":"$46", "pos":"-650 812", "shape":"rectangle 150 10", "physical":"true", "attached":"true"},
+            {"id":"$47", "pos":"-791 812", "shape":"rectangle 150 10", "physical":"true", "attached":"true"},
+            {"id":"$49", "pos":"-353 187", "shape":"rectangle 150 10", "physical":"true", "attached":"true"},
+            {"id":"$48", "pos":"-198 188", "shape":"rectangle 150 10", "physical":"true", "attached":"true"},
+            {"type":"coin", "id":"$prvni-mince", "pos":"-259 10", "physical":"true", "attached":"true"},
+            {"type":"coin", "id":"$43", "pos":"-391 7", "physical":"true", "attached":"true"},
+            {"type":"coin", "id":"$50", "pos":"-509 5", "physical":"true", "attached":"true"},
+            {"type":"coin", "id":"$51", "pos":"-524 280", "physical":"true", "attached":"true"},
+            {"type":"coin", "id":"$52", "pos":"-411 270", "physical":"true", "attached":"true"},
+            {"type":"coin", "id":"$53", "pos":"-268 273", "physical":"true", "attached":"true"},
+            {"type":"coin", "id":"$54", "pos":"-143 265", "physical":"true", "attached":"true"},
+            {"type":"coin", "id":"$55", "pos":"-642 276", "physical":"true", "attached":"true"}
+          ]},
+          {"id":"$obchod", "pos":"100 22", "inside": [
+            {"id":"$ta-co-spadne", "pos":"34 -41", "physical":"true", "rotable":"true"},
+            {"id":"$ta-co-ji-pomuze", "pos":"60 18", "physical":"true", "rotable":"true"},
+            {"id":"$19", "pos":"85 208", "shape":"rectangle 150 10", "physical":"true", "attached":"true"},
+            {"id":"$20", "pos":"-221 308", "shape":"rectangle 150 10", "physical":"true", "attached":"true"},
+            {"type":"frame", "id":"$21", "pos":"-223 324", "guiStuff":"true", "size":"720 130", "target":"$obchod", "title":"XML pohled na 'Malý svět'", "showXML":"true"},
+            {"id":"$17", "pos":"-13 264", "shape":"rectangle 150 10", "physical":"true", "attached":"true"},
+            {"id":"$18", "pos":"204 306", "shape":"rectangle 150 10", "physical":"true", "attached":"true"}
+          ]}
+        ]}
+      ]}
+    ]}
+  ]}
+}

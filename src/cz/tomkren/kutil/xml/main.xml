@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kutil>
+    <o type="time" ups="80">
+        <o type="frame" target="$main" id="$mainFrame" size="1117 701" pos="20 20" guiStuff="true">
+
+
+
+            <title>Loď bláznů</title>
+
+            <o id="$main" main="true" guiStuff="true">
+
+                <o type="button" title="play/pause" cmd="play" pos="30 30" />
+                <o type="button" title="changeInsertMode" cmd="changeInsertMode" pos="120 30" />
+                <o type="button" title="showInfo" cmd="showInfo" pos="250 30" />
+
+                <o type="button" title="undo" cmd="undo" pos="30 60"/>
+                <o type="button" title="redo" cmd="redo" pos="75 60"/>
+
+
+
+                <o type="frame" title="U Vincenta doma" target="$doma" size="1350 600" pos="10 100" cam="-227 -93" guiStuff="true" />
+                <o type="frame" title="Na trhu" target="$obchod" size="545 570" pos="1368 100" cam="-227 -93" guiStuff="true" />
+
+
+
+                <o type="frame" id="$story" pos="561 4" size="545 70" cam="0 0" guiStuff="true">
+
+                    <title>Příběh</title>
+
+                    <o id="$doma" pos="22 22">
+
+                        <!--<o type="vincent" id="$vincent" pos="162 219" shape="vincent" physical="true"/>-->
+                        <o type="character" id="$vincent" pos="162 219" physical="true" human="true"/>
+                        <o type="character" id="$kostra" pos="-1388 215" physical="true"/>
+                        <o id="$12" pos="-219 416" shape="rectangle 150 10" physical="true" attached="true"/>
+                        <o id="$13" pos="-63 415" shape="rectangle 150 10" physical="true" attached="true"/>
+                        <o id="$10" pos="92 415" shape="rectangle 150 10" physical="true" attached="true"/>
+                        <o id="$23" pos="-375 415" shape="rectangle 150 10" physical="true" attached="true"/>
+                        <o id="$24" pos="-528 415" shape="rectangle 150 10" physical="true" attached="true"/>
+                        <o id="$26" pos="-680 413" shape="rectangle 150 10" physical="true" attached="true"/>
+                        <o id="$27" pos="-833 415" shape="rectangle 150 10" physical="true" attached="true"/>
+                        <o id="$28" pos="-989 415" shape="rectangle 150 10" physical="true" attached="true"/>
+                        <o id="$29" pos="-1144 415" shape="rectangle 150 10" physical="true" attached="true"/>
+                        <o id="$30" pos="-1294 414" shape="rectangle 150 10" physical="true" attached="true"/>
+                        <o id="$31" pos="-1451 412" shape="rectangle 150 10" physical="true" attached="true"/>
+                        <o id="$34" pos="541 311" shape="rectangle 150 10" physical="true" attached="true"/>
+                        <o id="$35" pos="694 311" shape="rectangle 150 10" physical="true" attached="true"/>
+                        <o id="$36" pos="846 310" shape="rectangle 150 10" physical="true" attached="true"/>
+                        <o id="$38" pos="1000 310" shape="rectangle 150 10" physical="true" attached="true"/>
+                        <o id="$39" pos="1154 310" shape="rectangle 150 10" physical="true" attached="true"/>
+                        <o id="$41" pos="148 189" shape="rectangle 150 10" physical="true" attached="true"/>
+                        <o id="$44" pos="-1548 181" shape="rectangle 1500 10" physical="true" attached="true"/>
+                        <o id="$15" pos="60 331" physical="true" rotable="true"/>
+                        <o id="$16" pos="35 253" physical="true" rotable="true"/>
+                        <o id="$9" pos="347 139" physical="true"/>
+                        <o id="$33" pos="440 311" shape="rectangle 150 10" physical="true" attached="true"/>
+                        <o id="$11" pos="203 415" shape="rectangle 150 10" physical="true" attached="true"/>
+                        <o id="$25" pos="372 -312" physical="true" rotable="true"/>
+                        <o id="$mala-1" pos="14 64" physical="true" rotable="true"/>
+                        <o id="$22" pos="287 813" shape="rectangle 150 10" physical="true" attached="true"/>
+                        <o type="frame" id="$8" pos="439 311" guiStuff="true" size="720 480" cam="-198 -21" target="$doma" title="XML pohled na 'U Vincka doma'" showXML="true"/>
+                        <o id="$32" pos="135 813" shape="rectangle 150 10" physical="true" attached="true"/>
+                        <o id="$37" pos="-14 813" shape="rectangle 150 10" physical="true" attached="true"/>
+                        <o id="$40" pos="-212 812" shape="rectangle 150 10" physical="true" attached="true"/>
+                        <o id="$42" pos="-359 812" shape="rectangle 150 10" physical="true" attached="true"/>
+                        <o id="$45" pos="-504 812" shape="rectangle 150 10" physical="true" attached="true"/>
+                        <o id="$46" pos="-650 812" shape="rectangle 150 10" physical="true" attached="true"/>
+                        <o id="$47" pos="-791 812" shape="rectangle 150 10" physical="true" attached="true"/>
+                        <o id="$49" pos="-353 187" shape="rectangle 150 10" physical="true" attached="true"/>
+                        <o id="$48" pos="-198 188" shape="rectangle 150 10" physical="true" attached="true"/>
+                        <o type="coin" id="$prvni-mince" pos="-259 10" physical="true" attached="true"/>
+                        <o type="coin" id="$43" pos="-391 7" physical="true" attached="true"/>
+                        <o type="coin" id="$50" pos="-509 5" physical="true" attached="true"/>
+                        <o type="coin" id="$51" pos="-524 280" physical="true" attached="true"/>
+                        <o type="coin" id="$52" pos="-411 270" physical="true" attached="true"/>
+                        <o type="coin" id="$53" pos="-268 273" physical="true" attached="true"/>
+                        <o type="coin" id="$54" pos="-143 265" physical="true" attached="true"/>
+                        <o type="coin" id="$55" pos="-642 276" physical="true" attached="true"/>
+                    </o>
+
+                    <o id="$obchod" pos="100 22">
+
+                        <o id="$ta-co-spadne" pos="34 -41" physical="true" rotable="true"/>
+                        <o id="$ta-co-ji-pomuze" pos="60 18" physical="true" rotable="true"/>
+
+                        <o id="$19" pos="85 208" shape="rectangle 150 10" physical="true" attached="true"/>
+                        <o id="$20" pos="-221 308" shape="rectangle 150 10" physical="true" attached="true"/>
+                        <o type="frame" id="$21" pos="-223 324" guiStuff="true" size="720 130" target="$obchod" title="XML pohled na 'Malý svět'" showXML="true"/>
+                        <o id="$17" pos="-13 264" shape="rectangle 150 10" physical="true" attached="true"/>
+                        <o id="$18" pos="204 306" shape="rectangle 150 10" physical="true" attached="true"/>
+
+                    </o>
+
+                </o>
+
+
+
+
+
+
+
+            </o>
+
+        </o>
+    </o>
+</kutil>
