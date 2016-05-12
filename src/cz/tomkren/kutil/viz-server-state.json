@@ -1,0 +1,25 @@
+{
+  "kutil": {
+    "type":"time",
+    "id":"$time",
+    "inside": [
+      {
+        "title":"VizServer",
+        "type":"frame",
+        "id":"$mainFrame",
+        "pos":"20 20",
+        "guiStuff":"true",
+        "size":"1117 701",
+        "target":"$main",
+        "inside": [
+          {
+            "main":"true",
+            "id":"$main",
+            "guiStuff":"true",
+            "inside": []
+          }
+        ]
+      }
+    ]
+  }
+}
