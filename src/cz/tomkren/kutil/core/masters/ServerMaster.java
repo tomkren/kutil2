@@ -63,6 +63,8 @@ public class ServerMaster extends AbstractHandler {
 
         String queryString = request.getQueryString();
 
+        String resultFormat = "jsonp"; // TODO udělat pak pořádně
+
         if (queryString != null) {
             String[] queryParts = queryString.split("&");
             for (String queryPart : queryParts) {
@@ -73,6 +75,8 @@ public class ServerMaster extends AbstractHandler {
                 if (key.equals("cmd")) {
                     Log.it("cmd: " + val);
                     kutil.getCmdMaster().cmd(val);
+                } else if (key.equals("resultFormat")) {
+                    resultFormat = val;
                 }
             }
         }
@@ -83,7 +87,17 @@ public class ServerMaster extends AbstractHandler {
 
         JSONObject currentServerGameState = getServerGameState();
 
-        response.getWriter().println("serverUpdate("+currentServerGameState.toString(2)+");");
+        String serverStateStr = currentServerGameState.toString(2);
+        String responseStr;
+
+        switch (resultFormat) {
+            case "jsonp" : responseStr = "serverUpdate("+serverStateStr+");"; break;
+            case "json"  : responseStr = serverStateStr; break;
+            default      : responseStr = serverStateStr; break;
+        }
+
+
+        response.getWriter().println(responseStr);
     }
 
 
