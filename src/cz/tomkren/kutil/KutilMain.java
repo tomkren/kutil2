@@ -50,21 +50,7 @@ public class KutilMain {
 
         Kutil kutil = new Kutil(config);
 
-        if (config.has("startServer") && config.getBoolean("startServer")) {
-            Log.it("Server started!\n");
 
-            Thread serverThread = new Thread() {
-                public void run() {
-
-                    int port = config.has("port") ? config.getInt("port") : 8080;
-
-                    kutil.getServerMaster().startServer(port);
-
-                }
-            };
-
-            serverThread.start();
-        }
 
         kutil.start(loadMethod, loadInput);
 

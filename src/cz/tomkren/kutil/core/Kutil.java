@@ -84,13 +84,26 @@ public class Kutil {
 
     public enum LoadMethod {RESOURCE, FILE, STRING, JSON_STRING, JSON_RESOURCE, JSON_FILE}
 
-    public void start(JSONObject stateJson) {
+    private void start(JSONObject stateJson) {
         init();
         KAtts loaded = KAtts.fromJson(stateJson, this);
         start(loaded);
     }
 
     public void start(LoadMethod loadMethod, String loadInput) {
+
+        if (config.has("startServer") && config.getBoolean("startServer")) {
+            Log.it("Server started!\n");
+
+            Thread serverThread = new Thread() {
+                public void run() {
+                    int port = config.has("port") ? config.getInt("port") : 8080;
+                    getServerMaster().startServer(port);
+                }
+            };
+
+            serverThread.start();
+        }
 
         if (loadMethod == LoadMethod.JSON_STRING) {
             start(new JSONObject(loadInput));
