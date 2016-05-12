@@ -53,8 +53,7 @@ public class KutilMain {
 
 
         kutil.start(loadMethod, loadInput);
-
-        kutil.getServerMaster().stopServer();
+        kutil.stop();
 
         Log.it("Good bye!");
     }

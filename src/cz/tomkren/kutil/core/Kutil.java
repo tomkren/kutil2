@@ -198,4 +198,9 @@ public class Kutil {
 
     public boolean isStarted() {return isStarted;}
 
+
+    public void stop() {
+        getServerMaster().stopServer();
+    }
+
 }

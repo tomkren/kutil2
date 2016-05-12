@@ -15,7 +15,7 @@ public class VizServer {
         Kutil kutil = new Kutil(config);
 
         kutil.start(Kutil.LoadMethod.JSON_RESOURCE, "/cz/tomkren/kutil/vizserver/viz-server-state.json");
-        kutil.getServerMaster().stopServer();
+        kutil.stop();
 
     }
 
