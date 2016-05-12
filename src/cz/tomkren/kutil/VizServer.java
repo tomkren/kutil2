@@ -1,6 +1,5 @@
 package cz.tomkren.kutil;
 
-import cz.tomkren.helpers.Log;
 import cz.tomkren.helpers.ResourceLoader;
 import cz.tomkren.kutil.core.Kutil;
 import org.json.JSONObject;
@@ -9,24 +8,14 @@ import org.json.JSONObject;
 
 public class VizServer {
 
-
     public static void main(String[] args) {
 
-        JSONObject config = new ResourceLoader().loadJSON(Kutil.DEFAULT_CONFIG);
-
-        Kutil.LoadMethod loadMethod = Kutil.LoadMethod.JSON_RESOURCE;
-        String loadInput = "/cz/tomkren/kutil/viz-server-state.json";
+        JSONObject config = new ResourceLoader().loadJSON("/cz/tomkren/kutil/viz-server-config.json");
 
         Kutil kutil = new Kutil(config);
 
-        kutil.start(loadMethod, loadInput);
-
+        kutil.start(Kutil.LoadMethod.JSON_RESOURCE, "/cz/tomkren/kutil/viz-server-state.json");
         kutil.getServerMaster().stopServer();
-
-        Log.it("Good bye!");
-
-
-
 
     }
 
