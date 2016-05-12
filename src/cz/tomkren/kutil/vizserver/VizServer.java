@@ -1,6 +1,6 @@
 package cz.tomkren.kutil.vizserver;
 
-import cz.tomkren.helpers.ResourceLoader;
+import cz.tomkren.utils.ResourceLoader;
 import cz.tomkren.kutil.core.Kutil;
 import org.json.JSONObject;
 

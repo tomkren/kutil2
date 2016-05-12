@@ -1,6 +1,6 @@
 package cz.tomkren.kutil.kobjects.character.effectors;
 
-import cz.tomkren.helpers.AB;
+import cz.tomkren.utils.AB;
 import cz.tomkren.kutil.kobjects.character.utils.Cooldown;
 import net.phys2d.math.Vector2f;
 import org.json.JSONObject;

@@ -1,4 +1,4 @@
-package cz.tomkren.helpers;
+package cz.tomkren.utils;
 
 // modifikovatelná trojice
 public class ABC<A,B,C> {

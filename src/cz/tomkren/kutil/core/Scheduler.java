@@ -1,6 +1,6 @@
 package cz.tomkren.kutil.core;
 
-import cz.tomkren.helpers.F;
+import cz.tomkren.utils.F;
 import cz.tomkren.kutil.core.masters.CmdMaster;
 import cz.tomkren.kutil.core.masters.ServerMaster;
 import cz.tomkren.kutil.kobjects.Time;

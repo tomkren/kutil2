@@ -1,7 +1,7 @@
 package cz.tomkren.kutil.kobjects.frame;
 
 
-import cz.tomkren.helpers.Log;
+import cz.tomkren.utils.Log;
 import cz.tomkren.kutil.core.KAtts;
 import cz.tomkren.kutil.core.KObject;
 import cz.tomkren.kutil.core.Kutil;

@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-import cz.tomkren.helpers.Log;
+import cz.tomkren.utils.Log;
 import cz.tomkren.kutil.kobjects.Text;
 import cz.tomkren.kutil.kobjects.Time;
 

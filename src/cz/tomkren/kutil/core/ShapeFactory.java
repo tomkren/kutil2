@@ -1,8 +1,8 @@
 package cz.tomkren.kutil.core;
 
 
-import cz.tomkren.helpers.AB;
-import cz.tomkren.helpers.Log;
+import cz.tomkren.utils.AB;
+import cz.tomkren.utils.Log;
 import cz.tomkren.kutil.items.Int2D;
 import cz.tomkren.kutil.shapes.FunctionShape;
 import cz.tomkren.kutil.shapes.RectangleShape;

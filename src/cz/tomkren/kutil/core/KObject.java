@@ -5,7 +5,7 @@ import java.awt.Graphics2D;
 
 import java.util.*;
 
-import cz.tomkren.helpers.Log;
+import cz.tomkren.utils.Log;
 import cz.tomkren.kutil.core.masters.*;
 import cz.tomkren.kutil.items.*;
 import cz.tomkren.kutil.kobjects.frame.Frame;

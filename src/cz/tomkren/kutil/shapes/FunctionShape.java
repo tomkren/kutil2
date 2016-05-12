@@ -1,7 +1,6 @@
 package cz.tomkren.kutil.shapes;
 
-import cz.tomkren.helpers.AB;
-import cz.tomkren.helpers.TODO;
+import cz.tomkren.utils.AB;
 import cz.tomkren.kutil.core.KObject;
 import cz.tomkren.kutil.core.KShape;
 import cz.tomkren.kutil.core.Kutil;

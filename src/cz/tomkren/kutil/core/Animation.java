@@ -1,6 +1,6 @@
 package cz.tomkren.kutil.core;
 
-import cz.tomkren.helpers.*;
+import cz.tomkren.utils.*;
 import cz.tomkren.kutil.items.Int2D;
 import org.json.JSONArray;
 import org.json.JSONObject;

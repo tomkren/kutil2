@@ -1,7 +1,7 @@
 package cz.tomkren.kutil.core;
 
 
-import cz.tomkren.helpers.*;
+import cz.tomkren.utils.*;
 import cz.tomkren.kutil.core.masters.*;
 import org.json.JSONObject;
 

@@ -1,8 +1,8 @@
 package cz.tomkren.kutil.x;
 
-import cz.tomkren.helpers.F;
-import cz.tomkren.helpers.Log;
-import cz.tomkren.helpers.ResourceLoader;
+import cz.tomkren.utils.F;
+import cz.tomkren.utils.Log;
+import cz.tomkren.utils.ResourceLoader;
 import cz.tomkren.kutil.x.templates.TextMedia;
 import org.json.JSONArray;
 import org.json.JSONObject;

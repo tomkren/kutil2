@@ -1,7 +1,7 @@
 package cz.tomkren.kutil.kobjects.character;
 
 import com.google.common.base.Joiner;
-import cz.tomkren.helpers.ResourceLoader;
+import cz.tomkren.utils.ResourceLoader;
 import cz.tomkren.kutil.core.KAtts;
 import cz.tomkren.kutil.core.KObject;
 import cz.tomkren.kutil.core.Kutil;

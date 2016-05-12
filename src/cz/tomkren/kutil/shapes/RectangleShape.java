@@ -6,7 +6,7 @@ import java.awt.Font;
 import java.awt.Graphics2D;
 import java.util.function.Function;
 
-import cz.tomkren.helpers.F;
+import cz.tomkren.utils.F;
 import net.phys2d.math.ROVector2f;
 import net.phys2d.math.Vector2f;
 import net.phys2d.raw.shapes.Box;

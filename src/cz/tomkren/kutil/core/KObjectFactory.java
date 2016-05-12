@@ -1,7 +1,6 @@
 package cz.tomkren.kutil.core;
 
 
-import cz.tomkren.helpers.TODO;
 import cz.tomkren.kutil.kobjects.*;
 import cz.tomkren.kutil.kobjects.character.GameCharacter;
 import cz.tomkren.kutil.kobjects.coin.Coin;

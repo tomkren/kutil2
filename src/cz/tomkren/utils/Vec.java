@@ -1,4 +1,4 @@
-package cz.tomkren.helpers;
+package cz.tomkren.utils;
 
 import java.util.ArrayList;
 import java.util.Arrays;

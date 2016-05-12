@@ -1,6 +1,6 @@
 package cz.tomkren.kutil.kobjects.character.effectors;
 
-import cz.tomkren.helpers.AB;
+import cz.tomkren.utils.AB;
 import net.phys2d.raw.Body;
 
 /** Created by user on 7. 8. 2015.*/

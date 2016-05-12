@@ -1,4 +1,4 @@
-package cz.tomkren.helpers;
+package cz.tomkren.utils;
 
 // modifikovatelný Pár
 public class AB<A,B> implements Weighted {

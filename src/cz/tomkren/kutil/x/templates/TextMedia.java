@@ -1,14 +1,11 @@
 package cz.tomkren.kutil.x.templates;
 
-import cz.tomkren.helpers.F;
-import cz.tomkren.helpers.Log;
-import cz.tomkren.helpers.ResourceLoader;
+import cz.tomkren.utils.ResourceLoader;
 import cz.tomkren.kutil.x.XCompiler;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /** Created by user on 21. 8. 2015. */

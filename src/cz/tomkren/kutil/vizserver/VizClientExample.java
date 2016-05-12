@@ -1,11 +1,14 @@
 package cz.tomkren.kutil.vizserver;
 
-import cz.tomkren.helpers.Log;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.net.URLConnection;
+import java.net.URLEncoder;
 
-import java.net.*;
-import java.io.*;
+import cz.tomkren.utils.Log;
 
-/** Created by user on 12. 5. 2016. */
+/** Created by Tom on 12. 5. 2016. */
 
 public class VizClientExample {
 

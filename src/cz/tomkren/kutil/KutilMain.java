@@ -1,7 +1,7 @@
 package cz.tomkren.kutil;
 
-import cz.tomkren.helpers.Log;
-import cz.tomkren.helpers.ResourceLoader;
+import cz.tomkren.utils.Log;
+import cz.tomkren.utils.ResourceLoader;
 import cz.tomkren.kutil.core.Kutil;
 import cz.tomkren.kutil.x.XCompiler;
 import org.json.JSONObject;

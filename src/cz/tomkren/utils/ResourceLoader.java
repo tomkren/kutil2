@@ -1,4 +1,4 @@
-package cz.tomkren.helpers;
+package cz.tomkren.utils;
 
 import org.apache.commons.io.IOUtils;
 import org.json.JSONObject;

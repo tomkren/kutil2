@@ -1,7 +1,7 @@
 package cz.tomkren.kutil.core.masters;
 
-import cz.tomkren.helpers.AA;
-import cz.tomkren.helpers.Log;
+import cz.tomkren.utils.AA;
+import cz.tomkren.utils.Log;
 import cz.tomkren.kutil.core.Kutil;
 import cz.tomkren.kutil.items.Int2D;
 import cz.tomkren.kutil.kobjects.frame.Frame;

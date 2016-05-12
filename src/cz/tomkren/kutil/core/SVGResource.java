@@ -1,11 +1,9 @@
 package cz.tomkren.kutil.core;
 
-import cz.tomkren.helpers.*;
+import cz.tomkren.utils.*;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import java.awt.*;
-import java.awt.geom.GeneralPath;
 import java.util.ArrayList;
 import java.util.List;
 

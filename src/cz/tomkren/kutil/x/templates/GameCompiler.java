@@ -1,6 +1,6 @@
 package cz.tomkren.kutil.x.templates;
 
-import cz.tomkren.helpers.ResourceLoader;
+import cz.tomkren.utils.ResourceLoader;
 import cz.tomkren.kutil.x.XCompiler;
 import org.json.JSONArray;
 import org.json.JSONObject;

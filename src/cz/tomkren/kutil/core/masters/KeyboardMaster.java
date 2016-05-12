@@ -1,6 +1,6 @@
 package cz.tomkren.kutil.core.masters;
 
-import cz.tomkren.helpers.Log;
+import cz.tomkren.utils.Log;
 import cz.tomkren.kutil.core.Cmd;
 import cz.tomkren.kutil.core.Kutil;
 import org.json.JSONObject;

@@ -1,7 +1,7 @@
 package cz.tomkren.kutil.core;
 
-import cz.tomkren.helpers.AA;
-import cz.tomkren.helpers.Double2x2;
+import cz.tomkren.utils.AA;
+import cz.tomkren.utils.Double2x2;
 import cz.tomkren.kutil.items.Int2D;
 
 import java.awt.*;
