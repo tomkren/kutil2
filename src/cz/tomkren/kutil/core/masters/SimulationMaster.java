@@ -4,6 +4,7 @@ import cz.tomkren.kutil.core.KObject;
 import cz.tomkren.kutil.core.KObjectFactory;
 import cz.tomkren.kutil.core.Kutil;
 import cz.tomkren.kutil.core.Cmd;
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -97,8 +98,21 @@ public class SimulationMaster {
 
         String parentId = args.get(0);
         try {
-            JSONObject json = new JSONObject(args.get(1));
-            return KObjectFactory.addNewKObject(parentId, json, kutil);
+
+            String jsonStr = args.get(1);
+            char headChar = jsonStr.charAt(0);
+
+            if (headChar == '{') {
+                JSONObject jsonObj = new JSONObject(jsonStr);
+                return KObjectFactory.addNewKObject(parentId, jsonObj, kutil);
+            } else if (headChar == '[') {
+                JSONArray jsonArr = new JSONArray(jsonStr);
+                return KObjectFactory.addNewKObjects(parentId, jsonArr, kutil);
+            }
+
+            return "ERROR in cmd add : Unsupported format";
+
+
         } catch (JSONException e) {
             return "ERROR in cmd add (JSON error), msg: "+e.getMessage();
         }
