@@ -37,6 +37,7 @@ public interface Cmd extends Function<List<String>,String> {
     String undo = "undo";
     String redo = "redo";
     String add  = "add";
+    String clearInside = "clearInside";
 
     // Player
     String player = "player";

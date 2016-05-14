@@ -43,6 +43,7 @@ public class SimulationMaster {
         kutil.registerCmd(Cmd.undo, this::undo);
         kutil.registerCmd(Cmd.redo, this::redo);
         kutil.registerFullCmd(Cmd.add,  this::add);
+        kutil.registerFullCmd(Cmd.clearInside, this::clearInside);
     }
 
     public KObject getMain() {
@@ -88,6 +89,23 @@ public class SimulationMaster {
 
             loadToMain(nextState);
         }
+    }
+
+    public String clearInside(List<String> args) {
+
+        if (args.size() != 1) {
+            return "ERROR: clearInside cmd must have 1 arg (<objectId>)!";
+        }
+
+        String kObjectId = args.get(0);
+
+        KObject kObject = kutil.getIdDB().get(kObjectId);
+
+        for (KObject o : kObject.inside()) {
+            o.delete();
+        }
+
+        return "Inside of kobject '"+kObjectId+"' cleared." ;
     }
 
     public String add(List<String> args) {
